@@ -20,7 +20,7 @@ BEATTOGETHER_EXPORT_FUNC void setup(CModInfo* info) {
 }
 
 BEATTOGETHER_EXPORT_FUNC void late_load() {
-    il2cpp_functions::Init();
+    i2c::functions::initialize();
 
     if (!LoadConfig())
         SaveConfig();

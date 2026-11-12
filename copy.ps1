@@ -24,7 +24,7 @@ if ($?) {
 
     if ($?) {
         adb shell am force-stop com.beatgames.beatsaber
-        adb shell am start com.beatgames.beatsaber/com.unity3d.player.UnityPlayerActivity
+        adb shell am start com.beatgames.beatsaber/com.unity3d.player.UnityPlayerGameActivity
         if ($args[0] -eq "--log") {
             & Start-Process PowerShell -ArgumentList "./logging.ps1 --file"
         }
